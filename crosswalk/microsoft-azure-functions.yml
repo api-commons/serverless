@@ -1,0 +1,30 @@
+provider: microsoft-azure-functions
+apis_io: https://apis.io/providers/microsoft-azure-functions/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    properties:
+      name: name
+      id: id
+      type: type
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/azure-functions-management-api.json#DELETE /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/functions/{functionName}
+    - openapi/_original/azure-functions-management-api.json#DELETE /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/functions/{functionName}
+    - openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/functions
+    - openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/functions/{functionName}
+    - openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/functions
+  function_deployment:
+    path_segment:
+    - deployments
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/azure-functions-management-api.json#DELETE /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/deployments/{id}
+    - openapi/_original/azure-functions-management-api.json#DELETE /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/deployments/{id}
+    - openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/deployments
+    - openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/deployments/{id}
+    - openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/deployments

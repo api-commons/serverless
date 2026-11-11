@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/serverless/main/schema/function.json",
+  "title": "Function",
+  "description": "The common function in Serverless Functions, distilled from 20 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.85,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "name",
+        "slug",
+        "FunctionName",
+        "function_name",
+        "displayName"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.75,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "id",
+        "functionId",
+        "$id",
+        "deploymentId",
+        "function_id",
+        "uuid"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "State"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.35,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "$createdAt",
+        "created_on"
+      ],
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.3,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "description",
+        "Description"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.3,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "version",
+        "Version"
+      ]
+    },
+    "runtime": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "runtime",
+        "Runtime"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "updated_at",
+        "$updatedAt",
+        "modified_on",
+        "updateTime"
+      ],
+      "format": "date-time"
+    },
+    "code": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "code",
+        "Code"
+      ]
+    },
+    "environment": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "environment",
+        "Environment",
+        "env"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "type"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "serverless",
+    "concept": "function",
+    "providers": 20,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

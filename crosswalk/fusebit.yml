@@ -1,0 +1,22 @@
+provider: fusebit
+apis_io: https://apis.io/providers/fusebit/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - function
+    properties:
+      id:
+      - functionId
+      - id
+      status: status
+      version: version
+      runtime: runtime
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/fusebit-api-v1.yaml#DELETE /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function/{functionId}
+    - openapi/_original/fusebit-api-v1.yaml#GET /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function
+    - openapi/_original/fusebit-api-v1.yaml#GET /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function/{functionId}
+    - openapi/_original/fusebit-api-v1.yaml#GET /v1/account/{accountId}/subscription/{subscriptionId}/function
+    - openapi/_original/fusebit-api-v1.yaml#PUT /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function/{functionId}

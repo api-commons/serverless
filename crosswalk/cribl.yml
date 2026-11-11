@@ -1,0 +1,21 @@
+provider: cribl
+apis_io: https://apis.io/providers/cribl/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - workers
+    - functions
+    properties:
+      id: id
+      status: status
+      description: description
+      version: version
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/cribl-cloud-api-openapi.yml#GET /master/workers
+    - openapi/_original/cribl-cloud-api-openapi.yml#GET /master/workers/{id}
+    - openapi/_original/cribl-cloud-api-openapi.yml#GET /system/functions
+    - openapi/_original/cribl-cloud-api-openapi.yml#GET /system/functions/{id}
+    - openapi/_original/cribl-edge-api-openapi.yml#GET /master/workers

@@ -1,0 +1,20 @@
+provider: netlify
+apis_io: https://apis.io/providers/netlify/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    - edge_functions
+    properties:
+      name: name
+      id: id
+      created_at: created_at
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/netlify-openapi-2.57.0-swagger.json#GET /sites/{site_id}/functions
+    - openapi/_original/netlify-openapi-2.57.0-swagger.json#PUT /deploys/{deploy_id}/edge_functions/{code_sha}
+    - openapi/_original/netlify-openapi-2.57.0-swagger.json#PUT /deploys/{deploy_id}/functions/{name}
+    - openapi/_original/netlify-openapi-original.yml#GET /sites/{site_id}/functions
+    - openapi/_original/netlify-openapi-original.yml#PUT /deploys/{deploy_id}/functions/{name}

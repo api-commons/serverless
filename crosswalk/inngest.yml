@@ -1,0 +1,17 @@
+provider: inngest
+apis_io: https://apis.io/providers/inngest/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    properties:
+      name:
+      - name
+      - slug
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/inngest-openapi.json#GET /apps/{appId}/functions
+    - openapi/_original/inngest-openapi.json#GET /apps/{appId}/functions/{functionId}

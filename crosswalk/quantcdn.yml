@@ -1,0 +1,18 @@
+provider: quantcdn
+apis_io: https://apis.io/providers/quantcdn/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - function
+    properties:
+      name: name
+      id: uuid
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/quantcdn-openapi.yml#DELETE /api/v2/organizations/{organization}/projects/{project}/rules/function/{rule}
+    - openapi/_original/quantcdn-openapi.yml#GET /api/v2/organizations/{organization}/projects/{project}/rules/function
+    - openapi/_original/quantcdn-openapi.yml#GET /api/v2/organizations/{organization}/projects/{project}/rules/function/{rule}
+    - openapi/_original/quantcdn-openapi.yml#PATCH /api/v2/organizations/{organization}/projects/{project}/rules/function/{rule}
+    - openapi/_original/quantcdn-openapi.yml#POST /api/v2/organizations/{organization}/projects/{project}/rules/function

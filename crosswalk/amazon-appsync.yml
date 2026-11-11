@@ -1,0 +1,21 @@
+provider: amazon-appsync
+apis_io: https://apis.io/providers/amazon-appsync/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    properties:
+      name: name
+      id: functionId
+      description: description
+      runtime: runtime
+      code: code
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/amazon-appsync-openapi.yml#DELETE /v1/apis/{apiId}/functions/{functionId}
+    - openapi/_original/amazon-appsync-openapi.yml#GET /v1/apis/{apiId}/functions
+    - openapi/_original/amazon-appsync-openapi.yml#GET /v1/apis/{apiId}/functions/{functionId}
+    - openapi/_original/amazon-appsync-openapi.yml#POST /v1/apis/{apiId}/functions
+    - openapi/_original/amazon-appsync-openapi.yml#PUT /v1/apis/{apiId}/functions/{functionId}

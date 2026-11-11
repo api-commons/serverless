@@ -1,0 +1,120 @@
+context: serverless
+generated: '2026-11-11'
+adopters:
+- provider: amazon-appsync
+  apis_io: https://apis.io/providers/amazon-appsync/
+  crosswalk: crosswalk/amazon-appsync.yml
+  concepts:
+  - function
+- provider: amazon-lambda
+  apis_io: https://apis.io/providers/amazon-lambda/
+  crosswalk: crosswalk/amazon-lambda.yml
+  concepts:
+  - function
+- provider: appwrite
+  apis_io: https://apis.io/providers/appwrite/
+  crosswalk: crosswalk/appwrite.yml
+  concepts:
+  - function
+  - function_deployment
+- provider: aws-lambda
+  apis_io: https://apis.io/providers/aws-lambda/
+  crosswalk: crosswalk/aws-lambda.yml
+  concepts:
+  - function
+  - function_deployment
+- provider: azion
+  apis_io: https://apis.io/providers/azion/
+  crosswalk: crosswalk/azion.yml
+  concepts:
+  - function
+- provider: blaxel
+  apis_io: https://apis.io/providers/blaxel/
+  crosswalk: crosswalk/blaxel.yml
+  concepts:
+  - function
+- provider: chroma
+  apis_io: https://apis.io/providers/chroma/
+  crosswalk: crosswalk/chroma.yml
+  concepts:
+  - function
+- provider: cloudflare
+  apis_io: https://apis.io/providers/cloudflare/
+  crosswalk: crosswalk/cloudflare.yml
+  concepts:
+  - function
+  - function_deployment
+- provider: cloudfront
+  apis_io: https://apis.io/providers/cloudfront/
+  crosswalk: crosswalk/cloudfront.yml
+  concepts:
+  - function
+- provider: cribl
+  apis_io: https://apis.io/providers/cribl/
+  crosswalk: crosswalk/cribl.yml
+  concepts:
+  - function
+- provider: fusebit
+  apis_io: https://apis.io/providers/fusebit/
+  crosswalk: crosswalk/fusebit.yml
+  concepts:
+  - function
+- provider: golem-cloud
+  apis_io: https://apis.io/providers/golem-cloud/
+  crosswalk: crosswalk/golem-cloud.yml
+  concepts:
+  - function
+  - function_deployment
+- provider: google-cloud-functions
+  apis_io: https://apis.io/providers/google-cloud-functions/
+  crosswalk: crosswalk/google-cloud-functions.yml
+  concepts:
+  - function
+- provider: inngest
+  apis_io: https://apis.io/providers/inngest/
+  crosswalk: crosswalk/inngest.yml
+  concepts:
+  - function
+- provider: insforge
+  apis_io: https://apis.io/providers/insforge/
+  crosswalk: crosswalk/insforge.yml
+  concepts:
+  - function
+  - function_deployment
+- provider: macrometa
+  apis_io: https://apis.io/providers/macrometa/
+  crosswalk: crosswalk/macrometa.yml
+  concepts:
+  - function
+  - function_deployment
+- provider: microsoft-azure-functions
+  apis_io: https://apis.io/providers/microsoft-azure-functions/
+  crosswalk: crosswalk/microsoft-azure-functions.yml
+  concepts:
+  - function
+  - function_deployment
+- provider: modal-com
+  apis_io: https://apis.io/providers/modal-com/
+  crosswalk: crosswalk/modal-com.yml
+  concepts:
+  - function
+- provider: netlify
+  apis_io: https://apis.io/providers/netlify/
+  crosswalk: crosswalk/netlify.yml
+  concepts:
+  - function
+- provider: oracle-cloud
+  apis_io: https://apis.io/providers/oracle-cloud/
+  crosswalk: crosswalk/oracle-cloud.yml
+  concepts:
+  - function
+- provider: quantcdn
+  apis_io: https://apis.io/providers/quantcdn/
+  crosswalk: crosswalk/quantcdn.yml
+  concepts:
+  - function
+- provider: supabase
+  apis_io: https://apis.io/providers/supabase/
+  crosswalk: crosswalk/supabase.yml
+  concepts:
+  - function

@@ -1,0 +1,48 @@
+provider: appwrite
+apis_io: https://apis.io/providers/appwrite/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    - function
+    properties:
+      name: name
+      id:
+      - $id
+      - deploymentId
+      - functionId
+      status: status
+      created_at: $createdAt
+      version: version
+      runtime: runtime
+      updated_at: $updatedAt
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /functions/{functionId}
+    - openapi/_original/appwrite-open-api3-latest.json#GET /functions
+    - openapi/_original/appwrite-open-api3-latest.json#GET /functions/{functionId}
+    - openapi/_original/appwrite-open-api3-latest.json#POST /functions
+    - openapi/_original/appwrite-open-api3-latest.json#POST /proxy/rules/function
+  function_deployment:
+    path_segment:
+    - deployments
+    - deployment
+    properties:
+      created_at: $createdAt
+      id:
+      - $id
+      - deploymentId
+      name: name
+      status: status
+      updated_at: $updatedAt
+      version: version
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /functions/{functionId}/deployments/{deploymentId}
+    - openapi/_original/appwrite-open-api3-latest.json#DELETE /sites/{siteId}/deployments/{deploymentId}
+    - openapi/_original/appwrite-open-api3-latest.json#GET /functions/{functionId}/deployments
+    - openapi/_original/appwrite-open-api3-latest.json#GET /functions/{functionId}/deployments/{deploymentId}
+    - openapi/_original/appwrite-open-api3-latest.json#GET /sites/{siteId}/deployments

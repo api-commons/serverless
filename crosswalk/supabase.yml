@@ -1,0 +1,24 @@
+provider: supabase
+apis_io: https://apis.io/providers/supabase/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    properties:
+      name:
+      - slug
+      - name
+      id: id
+      status: status
+      created_at: created_at
+      version: version
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/supabase-management-api-openapi.yml#DELETE /projects/{ref}/functions/{function_slug}
+    - openapi/_original/supabase-management-api-openapi.yml#GET /projects/{ref}/functions
+    - openapi/_original/supabase-management-api-openapi.yml#GET /projects/{ref}/functions/{function_slug}
+    - openapi/_original/supabase-management-api-openapi.yml#PATCH /projects/{ref}/functions/{function_slug}
+    - openapi/_original/supabase-management-api-openapi.yml#POST /projects/{ref}/functions

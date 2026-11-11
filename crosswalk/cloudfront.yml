@@ -1,0 +1,15 @@
+provider: cloudfront
+apis_io: https://apis.io/providers/cloudfront/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - function
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/cloudfront-openapi.yml#DELETE /2020-05-31/function/{Name}
+    - openapi/_original/cloudfront-openapi.yml#GET /2020-05-31/function
+    - openapi/_original/cloudfront-openapi.yml#GET /2020-05-31/function/{Name}
+    - openapi/_original/cloudfront-openapi.yml#POST /2020-05-31/function

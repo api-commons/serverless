@@ -1,0 +1,29 @@
+provider: macrometa
+apis_io: https://apis.io/providers/macrometa/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - function
+    - functions
+    properties:
+      name: name
+      created_at: createdAt
+      description: description
+      environment: environment
+      type: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/macrometa-gdn-openapi-original.json#DELETE /_fabric/{fabric}/_api/function/{fx-name}
+    - openapi/_original/macrometa-gdn-openapi-original.json#GET /_fabric/{fabric}/_api/function
+    - openapi/_original/macrometa-gdn-openapi-original.json#GET /_fabric/{fabric}/_api/function/{fx-name}
+    - openapi/_original/macrometa-photoniq-faas-openapi-original.json#DELETE /api/faas/v1/function/{functionName}
+    - openapi/_original/macrometa-photoniq-faas-openapi-original.json#GET /api/faas/v1/functions
+  function_deployment:
+    path_segment:
+    - versions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/macrometa-photoniq-faas-openapi-original.json#GET /api/faas/v1/function/{functionName}/versions

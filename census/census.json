@@ -1,0 +1,2696 @@
+{
+ "cohort_size": 136,
+ "unreadable": [],
+ "concepts": {
+  "function": {
+   "amazon-appsync": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "functionId": "string",
+     "functionArn": "string",
+     "name": "string",
+     "description": "string",
+     "dataSourceName": "string",
+     "requestMappingTemplate": "string",
+     "responseMappingTemplate": "string",
+     "functionVersion": "string",
+     "syncConfig": "object",
+     "maxBatchSize": "integer",
+     "runtime": "object",
+     "code": "string"
+    },
+    "evidence": [
+     "openapi/_original/amazon-appsync-openapi.yml#DELETE /v1/apis/{apiId}/functions/{functionId}",
+     "openapi/_original/amazon-appsync-openapi.yml#GET /v1/apis/{apiId}/functions",
+     "openapi/_original/amazon-appsync-openapi.yml#GET /v1/apis/{apiId}/functions/{functionId}",
+     "openapi/_original/amazon-appsync-openapi.yml#POST /v1/apis/{apiId}/functions",
+     "openapi/_original/amazon-appsync-openapi.yml#PUT /v1/apis/{apiId}/functions/{functionId}"
+    ]
+   },
+   "amazon-lambda": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/amazon-lambda-openapi.yml#DELETE /functions/{FunctionName}",
+     "openapi/_original/amazon-lambda-openapi.yml#GET /functions",
+     "openapi/_original/amazon-lambda-openapi.yml#GET /functions/{FunctionName}",
+     "openapi/_original/amazon-lambda-openapi.yml#POST /functions"
+    ]
+   },
+   "appwrite": {
+    "segments": [
+     "functions",
+     "function"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "$id": "string",
+     "$createdAt": "string",
+     "$updatedAt": "string",
+     "execute": "array",
+     "name": "string",
+     "enabled": "boolean",
+     "live": "boolean",
+     "logging": "boolean",
+     "runtime": "string",
+     "deploymentRetention": "integer",
+     "deploymentId": "string",
+     "deploymentCreatedAt": "string",
+     "latestDeploymentId": "string",
+     "latestDeploymentCreatedAt": "string",
+     "latestDeploymentStatus": "string",
+     "scopes": "array",
+     "vars": "array",
+     "events": "array",
+     "schedule": "string",
+     "timeout": "integer",
+     "entrypoint": "string",
+     "commands": "string",
+     "version": "string",
+     "installationId": "string",
+     "providerRepositoryId": "string",
+     "providerBranch": "string",
+     "providerRootDirectory": "string",
+     "providerSilentMode": "boolean",
+     "providerBranches": "array",
+     "providerPaths": "array",
+     "buildSpecification": "string",
+     "runtimeSpecification": "string",
+     "functionId": "string",
+     "domain": "string",
+     "type": "string",
+     "trigger": "string",
+     "redirectUrl": "string",
+     "redirectStatusCode": "integer",
+     "deploymentResourceType": "string",
+     "deploymentResourceId": "string",
+     "deploymentVcsProviderBranch": "string",
+     "status": "string",
+     "logs": "string",
+     "renewAt": "string",
+     "branch": "string"
+    },
+    "evidence": [
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /functions/{functionId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /functions",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /functions/{functionId}",
+     "openapi/_original/appwrite-open-api3-latest.json#POST /functions",
+     "openapi/_original/appwrite-open-api3-latest.json#POST /proxy/rules/function",
+     "openapi/_original/appwrite-open-api3-latest.json#PUT /functions/{functionId}"
+    ]
+   },
+   "aws-lambda": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "FunctionName": "string",
+     "FunctionArn": "string",
+     "Runtime": "string",
+     "Role": "string",
+     "Handler": "string",
+     "CodeSize": "integer",
+     "Description": "string",
+     "Timeout": "integer",
+     "MemorySize": "integer",
+     "LastModified": "string",
+     "CodeSha256": "string",
+     "Version": "string",
+     "VpcConfig": "object",
+     "DeadLetterConfig": "object",
+     "Environment": "object",
+     "KMSKeyArn": "string",
+     "TracingConfig": "object",
+     "MasterArn": "string",
+     "RevisionId": "string",
+     "Layers": "array",
+     "State": "string",
+     "StateReason": "string",
+     "StateReasonCode": "string",
+     "LastUpdateStatus": "string",
+     "LastUpdateStatusReason": "string",
+     "LastUpdateStatusReasonCode": "string",
+     "PackageType": "string",
+     "ImageConfigResponse": "object",
+     "Architectures": "array",
+     "EphemeralStorage": "object",
+     "SnapStart": "object",
+     "RuntimeVersionConfig": "object",
+     "LoggingConfig": "object",
+     "Code": "object",
+     "Publish": "boolean",
+     "Tags": "object",
+     "Configuration": "object",
+     "Concurrency": "object"
+    },
+    "evidence": [
+     "openapi/_original/amazon-lambda-functions-api-openapi.yml#DELETE /functions/{FunctionName}",
+     "openapi/_original/amazon-lambda-functions-api-openapi.yml#GET /functions",
+     "openapi/_original/amazon-lambda-functions-api-openapi.yml#GET /functions/{FunctionName}",
+     "openapi/_original/amazon-lambda-functions-api-openapi.yml#POST /functions",
+     "openapi/_original/aws-lambda-api-openapi.yml#DELETE /2015-03-31/functions/{FunctionName}",
+     "openapi/_original/aws-lambda-api-openapi.yml#GET /2015-03-31/functions",
+     "openapi/_original/aws-lambda-api-openapi.yml#GET /2015-03-31/functions/{FunctionName}",
+     "openapi/_original/aws-lambda-api-openapi.yml#POST /2015-03-31/functions"
+    ]
+   },
+   "azion": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "count": "integer",
+     "total_pages": "integer",
+     "page": "integer",
+     "page_size": "integer",
+     "next": "string",
+     "previous": "string",
+     "results": "array",
+     "id": "integer",
+     "name": "string",
+     "args": "object",
+     "azion_form": "object",
+     "function": "integer",
+     "active": "boolean",
+     "last_editor": "string",
+     "last_modified": "string",
+     "state": "string",
+     "product_version": "string",
+     "runtime": null,
+     "execution_environment": null,
+     "default_args": "object",
+     "reference_count": "integer",
+     "version": "string",
+     "vendor": "string",
+     "code": "string"
+    },
+    "evidence": [
+     "openapi/_original/azion-api-openapi.json#DELETE /workspace/applications/{application_id}/functions/{function_id}",
+     "openapi/_original/azion-api-openapi.json#DELETE /workspace/firewalls/{firewall_id}/functions/{function_id}",
+     "openapi/_original/azion-api-openapi.json#DELETE /workspace/functions/{function_id}",
+     "openapi/_original/azion-api-openapi.json#GET /workspace/applications/{application_id}/functions",
+     "openapi/_original/azion-api-openapi.json#GET /workspace/applications/{application_id}/functions/{function_id}",
+     "openapi/_original/azion-api-openapi.json#GET /workspace/firewalls/{firewall_id}/functions",
+     "openapi/_original/azion-api-openapi.json#GET /workspace/firewalls/{firewall_id}/functions/{function_id}",
+     "openapi/_original/azion-api-openapi.json#GET /workspace/functions",
+     "openapi/_original/azion-api-openapi.json#GET /workspace/functions/{function_id}",
+     "openapi/_original/azion-api-openapi.json#PATCH /workspace/applications/{application_id}/functions/{function_id}",
+     "openapi/_original/azion-api-openapi.json#PATCH /workspace/firewalls/{firewall_id}/functions/{function_id}",
+     "openapi/_original/azion-api-openapi.json#PATCH /workspace/functions/{function_id}"
+    ]
+   },
+   "blaxel": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "canaryRevision": "string",
+     "message": "string",
+     "revision": "string",
+     "status": "string",
+     "time": "string",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/blaxel-openapi.yml#DELETE /functions/{functionName}",
+     "openapi/_original/blaxel-openapi.yml#GET /functions",
+     "openapi/_original/blaxel-openapi.yml#GET /functions/{functionName}",
+     "openapi/_original/blaxel-openapi.yml#POST /functions",
+     "openapi/_original/blaxel-openapi.yml#PUT /functions/{functionName}"
+    ]
+   },
+   "chroma": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "completion_offset": "integer",
+     "database_id": "string",
+     "function_name": "string",
+     "id": "string",
+     "input_collection_id": "string",
+     "min_records_for_invocation": "integer",
+     "name": "string",
+     "output_collection": "string",
+     "output_collection_id": null,
+     "params": [
+      "string",
+      "null"
+     ],
+     "tenant_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/chroma-openapi.json#GET /api/v2/tenants/{tenant}/databases/{database}/collections/{collection_id}/functions/{function_name}"
+    ]
+   },
+   "cloudflare": {
+    "segments": [
+     "scripts",
+     "workers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "errors": null,
+     "messages": null,
+     "result": "array",
+     "success": "boolean",
+     "created_on": "string",
+     "etag": "string",
+     "id": "string",
+     "logpush": "boolean",
+     "modified_on": "string",
+     "pipeline_hash": "string",
+     "placement_mode": "string",
+     "tail_consumers": "array",
+     "usage_model": "string",
+     "result_info": "object",
+     "git_repository": "object",
+     "previews_base_config": "object",
+     "previews_enabled": "boolean",
+     "production_settings": "object",
+     "script_tag": "string",
+     "cache_options": "object",
+     "compatibility_date": "string",
+     "compatibility_flags": "array",
+     "exports": null,
+     "handlers": "array",
+     "has_assets": "boolean",
+     "has_modules": "boolean",
+     "last_deployed_from": "string",
+     "migration_tag": "string",
+     "named_handlers": "array",
+     "observability": "object",
+     "placement": "object",
+     "placement_status": null,
+     "tag": "string",
+     "tags": "array",
+     "pattern": "string",
+     "script": "string",
+     "entry_point": "string",
+     "startup_time_ms": "integer",
+     "count": "number",
+     "page": "number",
+     "per_page": "number",
+     "total_count": "number",
+     "total_pages": "number",
+     "deployed_on": "string",
+     "name": "string",
+     "references": "object",
+     "subdomain": "object",
+     "updated_on": "string",
+     "main_module": "string"
+    },
+    "evidence": [
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/workers/scripts/{script_name}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/workers/scripts",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/workers/scripts/{script_name}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#PUT /accounts/{account_id}/workers/scripts/{script_name}",
+     "openapi/_original/cloudflare-openapi-original.yml#DELETE /accounts/{account_id}/workers/scripts/{script_name}",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /accounts/{account_id}/workers/scripts",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /accounts/{account_id}/workers/scripts/{script_name}",
+     "openapi/_original/cloudflare-openapi-original.yml#PUT /accounts/{account_id}/workers/scripts/{script_name}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/builds/workers/{script_tag}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/workers/scripts/{script_name}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/workers/workers/{worker_id}",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/builds/workers/{script_tag}"
+    ]
+   },
+   "cloudfront": {
+    "segments": [
+     "function"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/cloudfront-openapi.yml#DELETE /2020-05-31/function/{Name}",
+     "openapi/_original/cloudfront-openapi.yml#GET /2020-05-31/function",
+     "openapi/_original/cloudfront-openapi.yml#GET /2020-05-31/function/{Name}",
+     "openapi/_original/cloudfront-openapi.yml#POST /2020-05-31/function"
+    ]
+   },
+   "cribl": {
+    "segments": [
+     "workers",
+     "functions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "category": "string",
+     "description": "string",
+     "conf": "object",
+     "hostname": "string",
+     "group": "string",
+     "version": "string",
+     "status": "string",
+     "os": "string",
+     "cpuUsage": "number",
+     "memUsage": "number",
+     "ip": "string"
+    },
+    "evidence": [
+     "openapi/_original/cribl-cloud-api-openapi.yml#GET /master/workers",
+     "openapi/_original/cribl-cloud-api-openapi.yml#GET /master/workers/{id}",
+     "openapi/_original/cribl-cloud-api-openapi.yml#GET /system/functions",
+     "openapi/_original/cribl-cloud-api-openapi.yml#GET /system/functions/{id}",
+     "openapi/_original/cribl-edge-api-openapi.yml#GET /master/workers",
+     "openapi/_original/cribl-edge-api-openapi.yml#GET /master/workers/{id}",
+     "openapi/_original/cribl-stream-api-openapi.yml#GET /system/functions"
+    ]
+   },
+   "fusebit": {
+    "segments": [
+     "function"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "functionId": "string",
+     "boundaryId": "string",
+     "schedule": "string",
+     "location": "string",
+     "runtime": "object",
+     "id": "string",
+     "subscriptionId": "string",
+     "compute": "object",
+     "computeSerialized": "string",
+     "configuration": "object",
+     "configurationSerialized": "string",
+     "nodejs": "object",
+     "scheduleSerialized": "string",
+     "metadata": "object",
+     "fusebitEditor": "object",
+     "security": "object",
+     "routes": "array",
+     "buildId": "string",
+     "status": "string",
+     "error": "object",
+     "version": "number",
+     "transitions": "object"
+    },
+    "evidence": [
+     "openapi/_original/fusebit-api-v1.yaml#DELETE /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function/{functionId}",
+     "openapi/_original/fusebit-api-v1.yaml#GET /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function",
+     "openapi/_original/fusebit-api-v1.yaml#GET /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function/{functionId}",
+     "openapi/_original/fusebit-api-v1.yaml#GET /v1/account/{accountId}/subscription/{subscriptionId}/function",
+     "openapi/_original/fusebit-api-v1.yaml#PUT /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function/{functionId}",
+     "openapi/_original/fusebit-http-api-core-openapi.yml#DELETE /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function/{functionId}",
+     "openapi/_original/fusebit-http-api-core-openapi.yml#GET /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function",
+     "openapi/_original/fusebit-http-api-core-openapi.yml#GET /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function/{functionId}",
+     "openapi/_original/fusebit-http-api-core-openapi.yml#GET /v1/account/{accountId}/subscription/{subscriptionId}/function",
+     "openapi/_original/fusebit-http-api-core-openapi.yml#PUT /v1/account/{accountId}/subscription/{subscriptionId}/boundary/{boundaryId}/function/{functionId}"
+    ]
+   },
+   "golem-cloud": {
+    "segments": [
+     "workers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "workerId": "object",
+     "status": "string",
+     "componentVersion": "integer",
+     "createdAt": "string",
+     "componentId": "string",
+     "workerName": "string",
+     "name": "string",
+     "args": "array",
+     "env": "object"
+    },
+    "evidence": [
+     "openapi/_original/golem-cloud-openapi.yml#DELETE /v1/components/{component_id}/workers/{agent_name}",
+     "openapi/_original/golem-cloud-openapi.yml#GET /v1/components/{component_id}/workers",
+     "openapi/_original/golem-cloud-openapi.yml#GET /v1/components/{component_id}/workers/{agent_name}",
+     "openapi/_original/golem-cloud-openapi.yml#POST /v1/components/{component_id}/workers"
+    ]
+   },
+   "google-cloud-functions": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "description": "string",
+     "environment": "string",
+     "buildConfig": "object",
+     "serviceConfig": "object",
+     "eventTrigger": "object",
+     "state": "string",
+     "updateTime": "string",
+     "labels": "object",
+     "url": "string",
+     "kmsKeyName": "string",
+     "metadata": "object",
+     "done": "boolean",
+     "error": "object",
+     "response": "object"
+    },
+    "evidence": [
+     "openapi/_original/google-cloud-functions-openapi.yml#DELETE /projects/{projectId}/locations/{location}/functions/{functionId}",
+     "openapi/_original/google-cloud-functions-openapi.yml#GET /projects/{projectId}/locations/{location}/functions",
+     "openapi/_original/google-cloud-functions-openapi.yml#GET /projects/{projectId}/locations/{location}/functions/{functionId}",
+     "openapi/_original/google-cloud-functions-openapi.yml#PATCH /projects/{projectId}/locations/{location}/functions/{functionId}",
+     "openapi/_original/google-cloud-functions-openapi.yml#POST /projects/{projectId}/locations/{location}/functions"
+    ]
+   },
+   "inngest": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "app": "object",
+     "configuration": "object",
+     "failureHandler": "object",
+     "id": "string",
+     "isArchived": "boolean",
+     "isPaused": "boolean",
+     "name": "string",
+     "slug": "string",
+     "triggers": "array"
+    },
+    "evidence": [
+     "openapi/_original/inngest-openapi.json#GET /apps/{appId}/functions",
+     "openapi/_original/inngest-openapi.json#GET /apps/{appId}/functions/{functionId}"
+    ]
+   },
+   "insforge": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "slug": "string",
+     "name": "string",
+     "description": "string",
+     "status": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "deployed_at": "string",
+     "success": "boolean",
+     "function": "object",
+     "code": "string",
+     "message": "string"
+    },
+    "evidence": [
+     "openapi/_original/insforge-functions-openapi.yaml#DELETE /api/functions/{slug}",
+     "openapi/_original/insforge-functions-openapi.yaml#DELETE /functions/{slug}",
+     "openapi/_original/insforge-functions-openapi.yaml#GET /api/functions",
+     "openapi/_original/insforge-functions-openapi.yaml#GET /api/functions/{slug}",
+     "openapi/_original/insforge-functions-openapi.yaml#GET /functions/{slug}",
+     "openapi/_original/insforge-functions-openapi.yaml#PATCH /functions/{slug}",
+     "openapi/_original/insforge-functions-openapi.yaml#POST /api/functions",
+     "openapi/_original/insforge-functions-openapi.yaml#POST /functions/{slug}",
+     "openapi/_original/insforge-functions-openapi.yaml#PUT /api/functions/{slug}",
+     "openapi/_original/insforge-functions-openapi.yaml#PUT /functions/{slug}"
+    ]
+   },
+   "macrometa": {
+    "segments": [
+     "function",
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "activationStatus": "string",
+     "description": "string",
+     "edgeWorkerId": "number",
+     "name": "string",
+     "type": "string",
+     "environment": "string",
+     "url": "string",
+     "fabric": "string",
+     "createdAt": "string",
+     "lastModified": "string",
+     "queryWorkerName": "string",
+     "queue": "string"
+    },
+    "evidence": [
+     "openapi/_original/macrometa-gdn-openapi-original.json#DELETE /_fabric/{fabric}/_api/function/{fx-name}",
+     "openapi/_original/macrometa-gdn-openapi-original.json#GET /_fabric/{fabric}/_api/function",
+     "openapi/_original/macrometa-gdn-openapi-original.json#GET /_fabric/{fabric}/_api/function/{fx-name}",
+     "openapi/_original/macrometa-photoniq-faas-openapi-original.json#DELETE /api/faas/v1/function/{functionName}",
+     "openapi/_original/macrometa-photoniq-faas-openapi-original.json#GET /api/faas/v1/functions"
+    ]
+   },
+   "microsoft-azure-functions": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "properties": "object",
+     "kind": "string",
+     "id": "string",
+     "name": "string",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/azure-functions-management-api.json#DELETE /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/functions/{functionName}",
+     "openapi/_original/azure-functions-management-api.json#DELETE /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/functions/{functionName}",
+     "openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/functions",
+     "openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/functions/{functionName}",
+     "openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/functions",
+     "openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/functions/{functionName}",
+     "openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/staticSites/{name}/builds/{environmentName}/functions",
+     "openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/staticSites/{name}/functions",
+     "openapi/_original/azure-functions-management-api.json#PUT /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/functions/{functionName}",
+     "openapi/_original/azure-functions-management-api.json#PUT /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/functions/{functionName}"
+    ]
+   },
+   "modal-com": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "function_id": "string",
+     "app_id": "string",
+     "name": "string",
+     "image": "string",
+     "gpu": "string",
+     "cpu": "number",
+     "memory": "integer",
+     "timeout": "integer",
+     "retries": "integer",
+     "min_containers": "integer",
+     "max_containers": "integer",
+     "web_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/modal-functions-openapi.yml#GET /apps/{app_id}/functions",
+     "openapi/_original/modal-functions-openapi.yml#GET /functions/{function_id}"
+    ]
+   },
+   "netlify": {
+    "segments": [
+     "functions",
+     "edge_functions"
+    ],
+    "operations": [
+     "GET collection",
+     "PUT item"
+    ],
+    "properties": {
+     "branch": "string",
+     "created_at": "string",
+     "functions": "array",
+     "id": "string",
+     "log_type": "string",
+     "provider": "string",
+     "name": "string",
+     "sha": "string",
+     "region": "string"
+    },
+    "evidence": [
+     "openapi/_original/netlify-openapi-2.57.0-swagger.json#GET /sites/{site_id}/functions",
+     "openapi/_original/netlify-openapi-2.57.0-swagger.json#PUT /deploys/{deploy_id}/edge_functions/{code_sha}",
+     "openapi/_original/netlify-openapi-2.57.0-swagger.json#PUT /deploys/{deploy_id}/functions/{name}",
+     "openapi/_original/netlify-openapi-original.yml#GET /sites/{site_id}/functions",
+     "openapi/_original/netlify-openapi-original.yml#PUT /deploys/{deploy_id}/functions/{name}"
+    ]
+   },
+   "oracle-cloud": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "applicationId": "string",
+     "compartmentId": "string",
+     "definedTags": "object",
+     "detachedModeTimeoutInSeconds": "integer",
+     "displayName": "string",
+     "failureDestination": "object",
+     "freeformTags": "object",
+     "id": "string",
+     "image": "string",
+     "imageDigest": "string",
+     "invokeEndpoint": "string",
+     "lifecycleState": "string",
+     "memoryInMBs": "integer",
+     "provisionedConcurrencyConfig": "object",
+     "shape": "string",
+     "sourceDetails": "object",
+     "successDestination": "object",
+     "timeCreated": "string",
+     "timeUpdated": "string",
+     "timeoutInSeconds": "integer",
+     "traceConfig": "object",
+     "config": "object"
+    },
+    "evidence": [
+     "openapi/_original/oracle-cloud-functions-openapi.yaml#DELETE /functions/{functionId}",
+     "openapi/_original/oracle-cloud-functions-openapi.yaml#GET /functions",
+     "openapi/_original/oracle-cloud-functions-openapi.yaml#GET /functions/{functionId}",
+     "openapi/_original/oracle-cloud-functions-openapi.yaml#POST /functions",
+     "openapi/_original/oracle-cloud-functions-openapi.yaml#PUT /functions/{functionId}"
+    ]
+   },
+   "quantcdn": {
+    "segments": [
+     "function"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "uuid": "string",
+     "rule_id": "string",
+     "weight": "integer",
+     "url": "array",
+     "domain": "array",
+     "disabled": "boolean",
+     "only_with_cookie": "string",
+     "method": "string",
+     "method_is": "array",
+     "method_is_not": "array",
+     "ip": "string",
+     "ip_is": "array",
+     "ip_is_not": "array",
+     "asn": "string",
+     "asn_is": "array",
+     "asn_is_not": "array",
+     "country": "string",
+     "country_is": "array",
+     "country_is_not": "array",
+     "action": "string",
+     "action_config": "object",
+     "fn_uuid": "string"
+    },
+    "evidence": [
+     "openapi/_original/quantcdn-openapi.yml#DELETE /api/v2/organizations/{organization}/projects/{project}/rules/function/{rule}",
+     "openapi/_original/quantcdn-openapi.yml#GET /api/v2/organizations/{organization}/projects/{project}/rules/function",
+     "openapi/_original/quantcdn-openapi.yml#GET /api/v2/organizations/{organization}/projects/{project}/rules/function/{rule}",
+     "openapi/_original/quantcdn-openapi.yml#PATCH /api/v2/organizations/{organization}/projects/{project}/rules/function/{rule}",
+     "openapi/_original/quantcdn-openapi.yml#POST /api/v2/organizations/{organization}/projects/{project}/rules/function"
+    ]
+   },
+   "supabase": {
+    "segments": [
+     "functions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "slug": "string",
+     "name": "string",
+     "status": "string",
+     "version": "integer",
+     "created_at": "string",
+     "updated_at": "string",
+     "verify_jwt": "boolean",
+     "body": "string"
+    },
+    "evidence": [
+     "openapi/_original/supabase-management-api-openapi.yml#DELETE /projects/{ref}/functions/{function_slug}",
+     "openapi/_original/supabase-management-api-openapi.yml#GET /projects/{ref}/functions",
+     "openapi/_original/supabase-management-api-openapi.yml#GET /projects/{ref}/functions/{function_slug}",
+     "openapi/_original/supabase-management-api-openapi.yml#PATCH /projects/{ref}/functions/{function_slug}",
+     "openapi/_original/supabase-management-api-openapi.yml#POST /projects/{ref}/functions"
+    ]
+   }
+  },
+  "function_deployment": {
+   "akamai": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "production": "object",
+     "staging": "object"
+    },
+    "evidence": [
+     "openapi/_original/akamai-cps-openapi.json#GET /enrollments/{enrollmentId}/deployments"
+    ]
+   },
+   "amazon-api-gateway": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "description": "string",
+     "createdDate": "string",
+     "apiSummary": "object",
+     "stageName": "string",
+     "stageDescription": "string",
+     "cacheClusterEnabled": "boolean",
+     "cacheClusterSize": "string",
+     "variables": "object",
+     "canarySettings": "object",
+     "tracingEnabled": "boolean",
+     "op": "string",
+     "path": "string",
+     "value": "string",
+     "from": "string"
+    },
+    "evidence": [
+     "openapi/_original/amazon-api-gateway-openapi.yaml#DELETE /restapis/{restapi_id}/deployments/{deployment_id}",
+     "openapi/_original/amazon-api-gateway-openapi.yaml#GET /restapis/{restapi_id}/deployments",
+     "openapi/_original/amazon-api-gateway-openapi.yaml#GET /restapis/{restapi_id}/deployments/{deployment_id}",
+     "openapi/_original/amazon-api-gateway-openapi.yaml#PATCH /restapis/{restapi_id}/deployments/{deployment_id}",
+     "openapi/_original/amazon-api-gateway-openapi.yaml#POST /restapis/{restapi_id}/deployments",
+     "openapi/_original/amazon-api-gateway-rest-openapi.yml#DELETE /restapis/{restapi_id}/deployments/{deployment_id}",
+     "openapi/_original/amazon-api-gateway-rest-openapi.yml#GET /restapis/{restapi_id}/deployments",
+     "openapi/_original/amazon-api-gateway-rest-openapi.yml#GET /restapis/{restapi_id}/deployments/{deployment_id}",
+     "openapi/_original/amazon-api-gateway-rest-openapi.yml#PATCH /restapis/{restapi_id}/deployments/{deployment_id}",
+     "openapi/_original/amazon-api-gateway-rest-openapi.yml#POST /restapis/{restapi_id}/deployments"
+    ]
+   },
+   "amazon-iot-greengrass": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "deployments": null,
+     "nextToken": null,
+     "deploymentId": null,
+     "iotJobId": null,
+     "iotJobArn": null,
+     "targetArn": "string",
+     "deploymentName": "string",
+     "components": "object",
+     "iotJobConfiguration": "object",
+     "deploymentPolicies": "object",
+     "parentTargetArn": "string",
+     "tags": "object",
+     "clientToken": "string",
+     "revisionId": null,
+     "deploymentStatus": null,
+     "creationTimestamp": null,
+     "isLatestForTarget": null
+    },
+    "evidence": [
+     "openapi/_original/amazon-iot-greengrass-openapi-original.yml#DELETE /greengrass/v2/deployments/{deploymentId}",
+     "openapi/_original/amazon-iot-greengrass-openapi-original.yml#GET /greengrass/v2/deployments",
+     "openapi/_original/amazon-iot-greengrass-openapi-original.yml#GET /greengrass/v2/deployments/{deploymentId}",
+     "openapi/_original/amazon-iot-greengrass-openapi-original.yml#POST /greengrass/v2/deployments"
+    ]
+   },
+   "appwrite": {
+    "segments": [
+     "deployments",
+     "deployment"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "$id": "string",
+     "$createdAt": "string",
+     "$updatedAt": "string",
+     "execute": "array",
+     "name": "string",
+     "enabled": "boolean",
+     "live": "boolean",
+     "logging": "boolean",
+     "runtime": "string",
+     "deploymentRetention": "integer",
+     "deploymentId": "string",
+     "deploymentCreatedAt": "string",
+     "latestDeploymentId": "string",
+     "latestDeploymentCreatedAt": "string",
+     "latestDeploymentStatus": "string",
+     "scopes": "array",
+     "vars": "array",
+     "events": "array",
+     "schedule": "string",
+     "timeout": "integer",
+     "entrypoint": "string",
+     "commands": "string",
+     "version": "string",
+     "installationId": "string",
+     "providerRepositoryId": "string",
+     "providerBranch": "string",
+     "providerRootDirectory": "string",
+     "providerSilentMode": "boolean",
+     "providerBranches": "array",
+     "providerPaths": "array",
+     "buildSpecification": "string",
+     "runtimeSpecification": "string",
+     "type": "string",
+     "resourceId": "string",
+     "resourceType": "string",
+     "sourceSize": "integer",
+     "buildSize": "integer",
+     "totalSize": "integer",
+     "buildId": "string",
+     "activate": "boolean",
+     "screenshotLight": "string",
+     "screenshotDark": "string",
+     "status": "string",
+     "buildLogs": "string",
+     "buildDuration": "integer",
+     "providerRepositoryName": "string",
+     "providerRepositoryOwner": "string",
+     "providerRepositoryUrl": "string",
+     "providerCommitHash": "string",
+     "providerCommitAuthorUrl": "string",
+     "providerCommitAuthor": "string",
+     "providerCommitMessage": "string",
+     "providerCommitUrl": "string",
+     "providerBranchUrl": "string",
+     "framework": "string",
+     "deploymentScreenshotLight": "string",
+     "deploymentScreenshotDark": "string",
+     "installCommand": "string",
+     "buildCommand": "string",
+     "startCommand": "string",
+     "outputDirectory": "string",
+     "buildRuntime": "string",
+     "adapter": "string",
+     "fallbackFile": "string"
+    },
+    "evidence": [
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /functions/{functionId}/deployments/{deploymentId}",
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /sites/{siteId}/deployments/{deploymentId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /functions/{functionId}/deployments",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /functions/{functionId}/deployments/{deploymentId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /sites/{siteId}/deployments",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /sites/{siteId}/deployments/{deploymentId}",
+     "openapi/_original/appwrite-open-api3-latest.json#PATCH /functions/{functionId}/deployment",
+     "openapi/_original/appwrite-open-api3-latest.json#PATCH /sites/{siteId}/deployment",
+     "openapi/_original/appwrite-open-api3-latest.json#POST /functions/{functionId}/deployments",
+     "openapi/_original/appwrite-open-api3-latest.json#POST /sites/{siteId}/deployments"
+    ]
+   },
+   "aws-api-gateway": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "description": "string",
+     "createdDate": "string",
+     "stageName": "string",
+     "DeploymentId": "string",
+     "Description": "string",
+     "DeploymentStatus": "string",
+     "CreatedDate": "string",
+     "StageName": "string"
+    },
+    "evidence": [
+     "openapi/_original/aws-api-gateway-v1-openapi.yml#GET /restapis/{restapi_id}/deployments",
+     "openapi/_original/aws-api-gateway-v1-openapi.yml#POST /restapis/{restapi_id}/deployments",
+     "openapi/_original/aws-api-gateway-v2-openapi.yml#GET /v2/apis/{api_id}/deployments",
+     "openapi/_original/aws-api-gateway-v2-openapi.yml#POST /v2/apis/{api_id}/deployments"
+    ]
+   },
+   "aws-lambda": {
+    "segments": [
+     "versions"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "FunctionName": "string",
+     "FunctionArn": "string",
+     "Runtime": "string",
+     "Role": "string",
+     "Handler": "string",
+     "CodeSize": "integer",
+     "Description": "string",
+     "Timeout": "integer",
+     "MemorySize": "integer",
+     "LastModified": "string",
+     "CodeSha256": "string",
+     "Version": "string",
+     "VpcConfig": "object",
+     "DeadLetterConfig": "object",
+     "Environment": "object",
+     "KMSKeyArn": "string",
+     "TracingConfig": "object",
+     "MasterArn": "string",
+     "RevisionId": "string",
+     "Layers": "array",
+     "State": "string",
+     "StateReason": "string",
+     "StateReasonCode": "string",
+     "LastUpdateStatus": "string",
+     "LastUpdateStatusReason": "string",
+     "LastUpdateStatusReasonCode": "string",
+     "PackageType": "string",
+     "ImageConfigResponse": "object",
+     "Architectures": "array",
+     "EphemeralStorage": "object",
+     "SnapStart": "object",
+     "RuntimeVersionConfig": "object",
+     "LoggingConfig": "object"
+    },
+    "evidence": [
+     "openapi/_original/aws-lambda-api-openapi.yml#GET /2015-03-31/functions/{FunctionName}/versions",
+     "openapi/_original/aws-lambda-api-openapi.yml#POST /2015-03-31/functions/{FunctionName}/versions"
+    ]
+   },
+   "centml": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "type": "string",
+     "status": "string",
+     "cluster_id": "integer",
+     "endpoint_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/centml-openapi.yml#GET /deployments"
+    ]
+   },
+   "cloudflare": {
+    "segments": [
+     "deployments",
+     "versions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "count": null,
+     "page": null,
+     "per_page": null,
+     "total_count": null,
+     "result": "array",
+     "errors": "array",
+     "messages": "array",
+     "success": "boolean",
+     "aliases": "array",
+     "build_config": null,
+     "created_on": "string",
+     "deployment_trigger": "object",
+     "env_vars": "object",
+     "environment": "string",
+     "id": "string",
+     "is_skipped": "boolean",
+     "latest_stage": null,
+     "modified_on": "string",
+     "project_id": "string",
+     "project_name": "string",
+     "short_id": "string",
+     "source": null,
+     "stages": "array",
+     "url": "string",
+     "created_at": "string",
+     "deployment_id": "string",
+     "version_id": "string",
+     "outputs": "object",
+     "type": "string",
+     "total_pages": "number",
+     "skip_reason": "string",
+     "uses_functions": "boolean",
+     "annotations": "object",
+     "author_email": "string",
+     "strategy": "string",
+     "versions": "array",
+     "metadata": "object",
+     "number": "number",
+     "bindings": "array",
+     "script": "object",
+     "script_runtime": "object",
+     "exports_reconciliation": null,
+     "startup_time_ms": "integer",
+     "assets": "object",
+     "cache_options": "object",
+     "compatibility_date": "string",
+     "compatibility_flags": "array",
+     "containers": "array",
+     "env": null,
+     "exports": null,
+     "limits": "object",
+     "main_module": "string",
+     "migrations": null,
+     "placement": "object",
+     "usage_model": "string",
+     "modules": "array",
+     "author_id": "string",
+     "migration_tag": "string",
+     "urls": "array",
+     "content_base64": "string",
+     "content_type": "string",
+     "name": "string",
+     "package_dependencies": "array"
+    },
+    "evidence": [
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/pages/projects/{project_name}/deployments/{deployment_id}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/pages/projects/{project_name}/deployments",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/pages/projects/{project_name}/deployments/{deployment_id}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#POST /accounts/{account_id}/pages/projects/{project_name}/deployments",
+     "openapi/_original/cloudflare-openapi-original.yml#DELETE /accounts/{account_id}/pages/projects/{project_name}/deployments/{deployment_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /accounts/{account_id}/pages/projects/{project_name}/deployments",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /accounts/{account_id}/pages/projects/{project_name}/deployments/{deployment_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#POST /accounts/{account_id}/pages/projects/{project_name}/deployments",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/pages/projects/{project_name}/deployments/{deployment_id}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/workers/scripts/{script_name}/deployments/{deployment_id}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/workers/workers/{worker_id}/previews/{preview_id}/deployments/{deployment_id}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/workers/workers/{worker_id}/versions/{version_id}"
+    ]
+   },
+   "convex": {
+    "segments": [
+     "deployment",
+     "deployments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "createTime": "integer",
+     "lastDeployTime": [
+      "integer",
+      "null"
+     ],
+     "deploymentType": "string",
+     "projectId": "integer",
+     "creator": null,
+     "previewIdentifier": null,
+     "region": "string",
+     "isDefault": "boolean",
+     "reference": "string",
+     "dashboardEditConfirmation": [
+      "boolean",
+      "null"
+     ],
+     "deploymentUrl": "string",
+     "expiresAt": [
+      "integer",
+      "null"
+     ],
+     "class": "string",
+     "sendLogsToClient": [
+      "boolean",
+      "null"
+     ],
+     "kind": "string"
+    },
+    "evidence": [
+     "openapi/_original/convex-openapi.json#GET /deployments/{deployment_name}",
+     "openapi/_original/convex-openapi.json#GET /projects/{project_id}/deployment",
+     "openapi/_original/convex-openapi.json#GET /teams/{team_id_or_slug}/projects/{project_slug}/deployment",
+     "openapi/_original/convex-openapi.json#PATCH /deployments/{deployment_name}"
+    ]
+   },
+   "datacrunch": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "containers": "array",
+     "endpoint_base_url": "string",
+     "created_at": "string",
+     "compute": null,
+     "container_registry_settings": null,
+     "is_spot": "boolean",
+     "variant": "string",
+     "features": "array",
+     "hf_token_secret_name": "string",
+     "shm_size_mb": "number",
+     "scaling": null
+    },
+    "evidence": [
+     "openapi/_original/datacrunch-openapi.json#POST /v1/container-deployment-templates/{template_id}/deployments"
+    ]
+   },
+   "deno": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "projectId": "string",
+     "status": "string",
+     "domains": "array",
+     "envVars": "object",
+     "databases": "object",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "entryPointUrl": "string",
+     "assets": "object",
+     "compilerOptions": "object"
+    },
+    "evidence": [
+     "openapi/_original/deno-deploy-rest-api-openapi.yml#DELETE /deployments/{deploymentId}",
+     "openapi/_original/deno-deploy-rest-api-openapi.yml#GET /deployments/{deploymentId}",
+     "openapi/_original/deno-deploy-rest-api-openapi.yml#GET /projects/{projectId}/deployments",
+     "openapi/_original/deno-deploy-rest-api-openapi.yml#POST /projects/{projectId}/deployments",
+     "openapi/_original/deno-subhosting-api-openapi.yml#DELETE /deployments/{deploymentId}",
+     "openapi/_original/deno-subhosting-api-openapi.yml#GET /deployments/{deploymentId}",
+     "openapi/_original/deno-subhosting-api-openapi.yml#GET /projects/{projectId}/deployments",
+     "openapi/_original/deno-subhosting-api-openapi.yml#POST /projects/{projectId}/deployments"
+    ]
+   },
+   "edgegap": {
+    "segments": [
+     "deployments",
+     "deployment"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "request_id": "string",
+     "fqdn": "string",
+     "start_time": "string",
+     "ready": "boolean",
+     "public_ip": "string",
+     "ports": "object",
+     "tags": "array",
+     "sockets": "integer",
+     "sockets_usage": "integer",
+     "is_joinable_by_session": "boolean",
+     "total": "object",
+     "cpu": "object",
+     "cpu_throttle_rate": "object",
+     "cpu_throttle_total": "object",
+     "mem": "object",
+     "network": "object"
+    },
+    "evidence": [
+     "openapi/_original/edgegap-openapi.json#GET /v1/deployments",
+     "openapi/_original/edgegap-openapi.json#GET /v1/metrics/deployment/{request_id}",
+     "openapi/_original/edgegap-openapi.json#PATCH /v1/deployments/{request_id}"
+    ]
+   },
+   "freestyle-sh": {
+    "segments": [
+     "deployments",
+     "deployment"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "deployment": "string",
+     "accountId": "string",
+     "provisionedAt": "string",
+     "startedAt": [
+      "string",
+      "null"
+     ],
+     "duration": [
+      "string",
+      "null"
+     ],
+     "state": "string",
+     "envVars": "object",
+     "metadata": "object",
+     "code": null,
+     "deploymentId": "string",
+     "projectId": "string",
+     "domains": [
+      "array",
+      "null"
+     ],
+     "entrypoint": [
+      "string",
+      "null"
+     ],
+     "source": null,
+     "config": "object",
+     "timeout": "string",
+     "deployedAt": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/freestyle-execute-api-openapi.yml#GET /execute/v1/deployments",
+     "openapi/_original/freestyle-execute-api-openapi.yml#GET /execute/v1/deployments/{deployment}",
+     "openapi/_original/freestyle-web-api-openapi.yml#GET /web/v1/deployments",
+     "openapi/_original/freestyle-web-api-openapi.yml#GET /web/v1/deployments/{deployment_id}",
+     "openapi/_original/freestyle-web-api-openapi.yml#POST /web/v1/deployment"
+    ]
+   },
+   "golem-cloud": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "apiDefinitions": "array",
+     "site": "object",
+     "createdAt": "string",
+     "apiDefinitionId": "string",
+     "version": "string"
+    },
+    "evidence": [
+     "openapi/_original/golem-cloud-openapi.yml#DELETE /v1/api/deployments/{site}",
+     "openapi/_original/golem-cloud-openapi.yml#GET /v1/api/deployments",
+     "openapi/_original/golem-cloud-openapi.yml#GET /v1/api/deployments/{site}",
+     "openapi/_original/golem-cloud-openapi.yml#POST /v1/api/deployments"
+    ]
+   },
+   "insforge": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "providerDeploymentId": "string",
+     "provider": "string",
+     "status": "string",
+     "url": "string",
+     "metadata": "object",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "uploadUrl": "string",
+     "uploadFields": "object"
+    },
+    "evidence": [
+     "openapi/_original/insforge-deployments-openapi.yaml#GET /api/deployments",
+     "openapi/_original/insforge-deployments-openapi.yaml#GET /api/deployments/{id}",
+     "openapi/_original/insforge-deployments-openapi.yaml#POST /api/deployments"
+    ]
+   },
+   "koyeb": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "allocated_at": "string",
+     "started_at": "string",
+     "succeeded_at": "string",
+     "terminated_at": "string",
+     "organization_id": "string",
+     "project_id": "string",
+     "app_id": "string",
+     "service_id": "string",
+     "parent_id": "string",
+     "child_id": "string",
+     "status": "string",
+     "metadata": "object",
+     "definition": "object",
+     "messages": "array",
+     "provisioning_info": "object",
+     "database_info": "object",
+     "instance_snapshot_id": "string",
+     "created_by": "string",
+     "version": "string",
+     "deployment_group": "string",
+     "skip_build": "boolean",
+     "role": "string"
+    },
+    "evidence": [
+     "openapi/_original/koyeb-openapi.json#GET /v1/deployments",
+     "openapi/_original/koyeb-openapi.json#GET /v1/deployments/{id}"
+    ]
+   },
+   "macrometa": {
+    "segments": [
+     "versions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/macrometa-photoniq-faas-openapi-original.json#GET /api/faas/v1/function/{functionName}/versions"
+    ]
+   },
+   "microsoft-azure-functions": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "properties": "object",
+     "kind": "string"
+    },
+    "evidence": [
+     "openapi/_original/azure-functions-management-api.json#DELETE /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/deployments/{id}",
+     "openapi/_original/azure-functions-management-api.json#DELETE /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/deployments/{id}",
+     "openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/deployments",
+     "openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/deployments/{id}",
+     "openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/deployments",
+     "openapi/_original/azure-functions-management-api.json#GET /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/deployments/{id}",
+     "openapi/_original/azure-functions-management-api.json#PUT /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/deployments/{id}",
+     "openapi/_original/azure-functions-management-api.json#PUT /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/slots/{slot}/deployments/{id}"
+    ]
+   },
+   "prisma": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "url": "string",
+     "serviceId": "string",
+     "foundryVersionId": "string",
+     "createdAt": "string",
+     "uploadUrl": [
+      "string",
+      "null"
+     ],
+     "portMapping": "object",
+     "skipCodeUpload": "boolean",
+     "status": "string",
+     "previewDomain": [
+      "string",
+      "null"
+     ],
+     "envVars": "object"
+    },
+    "evidence": [
+     "openapi/_original/prisma-postgres-management-api-openapi.json#DELETE /v1/deployments/{deploymentId}",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/apps/{appId}/deployments",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/deployments/{deploymentId}",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/services/{serviceId}/deployments",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#POST /v1/apps/{appId}/deployments",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#POST /v1/services/{serviceId}/deployments"
+    ]
+   },
+   "scalable-platforms": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "project": "string"
+    },
+    "evidence": [
+     "openapi/_original/scalable-platforms-openapi.yml#DELETE /v13/deployments/{id}",
+     "openapi/_original/scalable-platforms-openapi.yml#GET /v13/deployments/{id}",
+     "openapi/_original/scalable-platforms-openapi.yml#GET /v6/deployments",
+     "openapi/_original/scalable-platforms-openapi.yml#POST /v13/deployments"
+    ]
+   },
+   "spectro-cloud": {
+    "segments": [
+     "deployment"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "deployments": "array",
+     "filter": "object",
+     "clusters": "array",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/spectro-cloud-palette-openapi.json#POST /v1/dashboard/spectroclusters/{uid}/workloads/deployment",
+     "openapi/_original/spectro-cloud-palette-openapi.json#POST /v1/dashboard/workspaces/{uid}/spectroclusters/workloads/deployment",
+     "openapi/_original/spectrocloud-palette.yaml#POST /v1/dashboard/spectroclusters/{uid}/workloads/deployment",
+     "openapi/_original/spectrocloud-palette.yaml#POST /v1/dashboard/workspaces/{uid}/spectroclusters/workloads/deployment"
+    ]
+   },
+   "zededa": {
+    "segments": [
+     "deployments"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "title": "string",
+     "description": "string",
+     "projectId": "string",
+     "type": "string",
+     "spec": "object",
+     "deploymentStatus": "string",
+     "resourceStatusMap": "array",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "createdBy": "string",
+     "updatedBy": "string",
+     "operationType": "string",
+     "operationStatus": "string",
+     "objectKind": "string",
+     "objectId": "string",
+     "objectName": "string",
+     "objectRevision": "string",
+     "objectType": "string",
+     "operationTime": "string",
+     "startTime": "string",
+     "endTime": "string",
+     "user": "string",
+     "httpStatusCode": "integer",
+     "httpStatusMsg": "string",
+     "jobId": "string",
+     "error": "array",
+     "helmChartData": "object",
+     "appInstPolicies": "array",
+     "networkInstPolicies": "array",
+     "volumeInstPolicies": "array",
+     "devicePolicies": "array",
+     "integrationPolicy": "object",
+     "clusterPolicy": "object",
+     "revision": "object",
+     "deploymentTag": "string",
+     "edgeViewPolicy": "object",
+     "edgeviewPolicy": "object"
+    },
+    "evidence": [
+     "openapi/_original/zededa-kubernetes_service-openapi.json#GET /v1/cluster/instances/kubernetes/deployments",
+     "openapi/_original/zededa-kubernetes_service-openapi.json#POST /v1/cluster/instances/kubernetes/deployments",
+     "openapi/_original/zededa-node_service-openapi.json#DELETE /v2/projects/id/{projectId}/deployments",
+     "openapi/_original/zededa-node_service-openapi.json#GET /v2/projects/id/{projectId}/deployments",
+     "openapi/_original/zededa-node_service-openapi.json#POST /v2/projects/id/{projectId}/deployments"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "akamai",
+    "amazon-api-gateway",
+    "amazon-appsync",
+    "amazon-aurora-dsql",
+    "amazon-batch",
+    "amazon-eventbridge-pipes",
+    "amazon-eventbridge-scheduler",
+    "amazon-iot-greengrass",
+    "amazon-lambda",
+    "amazon-outposts",
+    "apache-event-mesh",
+    "appwrite",
+    "archil",
+    "armada",
+    "att",
+    "aws-api-gateway",
+    "aws-lambda",
+    "azion",
+    "azure-container-apps",
+    "azure-container-instances",
+    "azure-function-apps",
+    "beam-cloud",
+    "blaxel",
+    "centml",
+    "cerebrium",
+    "chroma",
+    "chutes",
+    "cloudflare",
+    "cloudfront",
+    "codehooks",
+    "convex",
+    "cribl",
+    "cumulocity",
+    "datacrunch",
+    "datastax",
+    "deepinfra",
+    "deno",
+    "ditto-live",
+    "edgee",
+    "edgegap",
+    "esper",
+    "expanso",
+    "f5-networks",
+    "fal-ai",
+    "fauna",
+    "featherless",
+    "fermyon",
+    "firecracker",
+    "fly-io",
+    "freestyle-sh",
+    "fusebit",
+    "gameye",
+    "gcp",
+    "golem-cloud",
+    "google-bigquery",
+    "google-cloud-api-gateway",
+    "google-cloud-app-engine",
+    "google-cloud-eventarc",
+    "google-cloud-functions",
+    "google-cloud-platform-gcp",
+    "google-cloud-run",
+    "google-cloud-workflows",
+    "google-distributed-cloud",
+    "gradient",
+    "ibm",
+    "inngest",
+    "insforge",
+    "knative",
+    "koyeb",
+    "kvdb",
+    "langbase",
+    "localai",
+    "localstack",
+    "macrometa",
+    "micronaut",
+    "microsoft-azure-functions",
+    "microsoft-azure-web-pubsub",
+    "modal-com",
+    "neon",
+    "netlify",
+    "ninetailed",
+    "nscale",
+    "oracle-cloud",
+    "passivelogic",
+    "planetscale",
+    "prisma",
+    "qstash",
+    "quantcdn",
+    "quarkus",
+    "qubrid-ai",
+    "rightnow",
+    "rivet",
+    "runpod",
+    "scalable-platforms",
+    "scalable-services",
+    "scale-computing",
+    "scaleway",
+    "segmind",
+    "spectro-cloud",
+    "supabase",
+    "synadia-communications",
+    "thenile",
+    "tttech",
+    "turbopuffer",
+    "turso",
+    "unionai",
+    "upstash",
+    "val-town",
+    "vast-ai",
+    "vercel",
+    "warpstream",
+    "webscale-networks",
+    "weidmueller",
+    "xano",
+    "xata",
+    "zededa"
+   ],
+   "kebab-case": [
+    "akamai",
+    "amazon-aurora-dsql",
+    "amazon-efs",
+    "amazon-eventbridge-scheduler",
+    "amazon-lambda",
+    "amazon-outposts",
+    "appwrite",
+    "armada",
+    "att",
+    "aws-lambda",
+    "blaxel",
+    "chroma",
+    "cloudflare",
+    "cloudfront",
+    "cribl",
+    "cumulocity",
+    "datacrunch",
+    "datastax",
+    "edgegap",
+    "esper",
+    "f5-networks",
+    "fermyon",
+    "firecracker",
+    "freestyle-sh",
+    "gameye",
+    "golem-cloud",
+    "insforge",
+    "koyeb",
+    "langbase",
+    "localai",
+    "localstack",
+    "macrometa",
+    "modal-com",
+    "neon",
+    "netlify",
+    "passivelogic",
+    "planetscale",
+    "prisma",
+    "quantcdn",
+    "quarkus",
+    "qubrid-ai",
+    "rivet",
+    "scale-computing",
+    "scaleway",
+    "segmind",
+    "spectro-cloud",
+    "supabase",
+    "synadia-communications",
+    "thenile",
+    "tttech",
+    "turso",
+    "upstash",
+    "val-town",
+    "vast-ai",
+    "webscale-networks",
+    "weidmueller",
+    "xano",
+    "xata",
+    "zededa"
+   ],
+   "other": [
+    "amazon-app-runner",
+    "amazon-athena",
+    "amazon-dynamodb",
+    "amazon-efs",
+    "amazon-eventbridge",
+    "amazon-eventbridge-pipes",
+    "amazon-eventbridge-scheduler",
+    "amazon-glue",
+    "amazon-iot-greengrass",
+    "amazon-outposts",
+    "amazon-proton",
+    "amazon-redshift",
+    "amazon-snow-family",
+    "amazon-step-functions",
+    "aws-api-gateway",
+    "aws-app-runner",
+    "aws-glue",
+    "aws-lambda",
+    "aws-step-functions",
+    "azure-container-apps",
+    "azure-container-instances",
+    "azure-function-apps",
+    "beam-cloud",
+    "cloudflare",
+    "cloudfront",
+    "codehooks",
+    "cumulocity",
+    "dynamodb",
+    "edgegap",
+    "fargate",
+    "fauna",
+    "fusebit",
+    "google-cloud-functions",
+    "google-cloud-run",
+    "google-cloud-workflows",
+    "knative",
+    "localai",
+    "localstack",
+    "macrometa",
+    "microsoft-azure-functions",
+    "microsoft-azure-web-pubsub",
+    "passivelogic",
+    "turbopuffer",
+    "webscale-networks",
+    "weidmueller"
+   ],
+   "camelCase": [
+    "akamai",
+    "amazon-iot-greengrass",
+    "amazon-outposts",
+    "appwrite",
+    "armada",
+    "att",
+    "azure-container-apps",
+    "azure-container-instances",
+    "azure-function-apps",
+    "blaxel",
+    "cloudflare",
+    "cumulocity",
+    "datastax",
+    "ditto-live",
+    "gcp",
+    "google-bigquery",
+    "google-cloud-platform-gcp",
+    "localai",
+    "microsoft-azure-functions",
+    "oracle-cloud",
+    "passivelogic",
+    "prisma",
+    "qstash",
+    "scale-computing",
+    "spectro-cloud",
+    "tttech",
+    "xata",
+    "zededa"
+   ],
+   "snake_case": [
+    "appwrite",
+    "azion",
+    "blaxel",
+    "chroma",
+    "chutes",
+    "cloudflare",
+    "convex",
+    "deno",
+    "ditto-live",
+    "edgee",
+    "esper",
+    "fly-io",
+    "koyeb",
+    "neon",
+    "netlify",
+    "scaleway",
+    "turbopuffer",
+    "unionai",
+    "val-town",
+    "vast-ai",
+    "warpstream"
+   ],
+   "PascalCase": [
+    "amazon-appsync",
+    "amazon-redshift",
+    "cloudflare",
+    "datastax",
+    "microsoft-azure-functions",
+    "oracle-cloud"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "akamai",
+    "amazon-api-gateway",
+    "amazon-appsync",
+    "amazon-iot-greengrass",
+    "apache-event-mesh",
+    "appwrite",
+    "archil",
+    "att",
+    "aws-api-gateway",
+    "azion",
+    "azure-container-instances",
+    "blaxel",
+    "centml",
+    "cerebrium",
+    "chroma",
+    "chutes",
+    "cloudflare",
+    "codehooks",
+    "convex",
+    "cribl",
+    "cumulocity",
+    "datacrunch",
+    "datastax",
+    "deno",
+    "edgee",
+    "edgegap",
+    "esper",
+    "expanso",
+    "fal-ai",
+    "fauna",
+    "fermyon",
+    "fly-io",
+    "freestyle-sh",
+    "fusebit",
+    "gameye",
+    "gcp",
+    "golem-cloud",
+    "google-bigquery",
+    "google-cloud-functions",
+    "google-cloud-platform-gcp",
+    "ibm",
+    "inngest",
+    "insforge",
+    "knative",
+    "koyeb",
+    "kvdb",
+    "langbase",
+    "localai",
+    "localstack",
+    "macrometa",
+    "micronaut",
+    "microsoft-azure-functions",
+    "microsoft-azure-web-pubsub",
+    "modal-com",
+    "modal-labs",
+    "neon",
+    "netlify",
+    "ninetailed",
+    "oracle-cloud",
+    "passivelogic",
+    "planetscale",
+    "prisma",
+    "qstash",
+    "quantcdn",
+    "quarkus",
+    "qubrid-ai",
+    "rivet",
+    "scale-computing",
+    "scaleway",
+    "spectro-cloud",
+    "supabase",
+    "synadia-communications",
+    "thenile",
+    "tttech",
+    "turbopuffer",
+    "turso",
+    "unionai",
+    "val-town",
+    "vast-ai",
+    "webscale-networks",
+    "weidmueller",
+    "xano",
+    "xata",
+    "zededa"
+   ],
+   "camelCase": [
+    "akamai",
+    "amazon-api-gateway",
+    "amazon-appsync",
+    "amazon-aurora-dsql",
+    "amazon-eventbridge-pipes",
+    "amazon-eventbridge-scheduler",
+    "amazon-iot-greengrass",
+    "amazon-outposts",
+    "amazon-proton",
+    "amazon-step-functions",
+    "appwrite",
+    "att",
+    "aws-api-gateway",
+    "aws-lambda",
+    "aws-step-functions",
+    "azure-function-apps",
+    "blaxel",
+    "cloudflare",
+    "convex",
+    "cumulocity",
+    "datacrunch",
+    "datastax",
+    "f5-networks",
+    "fermyon",
+    "freestyle-sh",
+    "fusebit",
+    "gameye",
+    "gcp",
+    "google-bigquery",
+    "google-cloud-api-gateway",
+    "google-cloud-eventarc",
+    "google-cloud-functions",
+    "google-cloud-platform-gcp",
+    "google-cloud-run",
+    "google-cloud-workflows",
+    "google-distributed-cloud",
+    "inngest",
+    "insforge",
+    "knative",
+    "langbase",
+    "localstack",
+    "macrometa",
+    "microsoft-azure-functions",
+    "microsoft-azure-web-pubsub",
+    "oracle-cloud",
+    "passivelogic",
+    "prisma",
+    "quantcdn",
+    "rivet",
+    "scale-computing",
+    "spectro-cloud",
+    "synadia-communications",
+    "thenile",
+    "tttech",
+    "zededa"
+   ],
+   "snake_case": [
+    "appwrite",
+    "azion",
+    "blaxel",
+    "chroma",
+    "chutes",
+    "cloudflare",
+    "cumulocity",
+    "datacrunch",
+    "datastax",
+    "deno",
+    "edgegap",
+    "esper",
+    "expanso",
+    "fal-ai",
+    "fly-io",
+    "ibm",
+    "insforge",
+    "koyeb",
+    "localai",
+    "macrometa",
+    "modal-com",
+    "neon",
+    "netlify",
+    "planetscale",
+    "prisma",
+    "quantcdn",
+    "rivet",
+    "scaleway",
+    "segmind",
+    "spectro-cloud",
+    "supabase",
+    "synadia-communications",
+    "thenile",
+    "tttech",
+    "turbopuffer",
+    "turso",
+    "val-town",
+    "vast-ai",
+    "weidmueller",
+    "xano",
+    "xata"
+   ],
+   "PascalCase": [
+    "amazon-app-runner",
+    "amazon-efs",
+    "amazon-eventbridge-pipes",
+    "amazon-eventbridge-scheduler",
+    "amazon-glue",
+    "amazon-outposts",
+    "amazon-redshift",
+    "amazon-snow-family",
+    "aws-app-runner",
+    "aws-glue",
+    "aws-lambda",
+    "cloudfront",
+    "fermyon",
+    "localstack",
+    "zededa"
+   ],
+   "other": [
+    "att",
+    "azion",
+    "azure-container-apps",
+    "cloudflare",
+    "datastax",
+    "esper",
+    "f5-networks",
+    "fly-io",
+    "koyeb",
+    "microsoft-azure-functions",
+    "prisma",
+    "quantcdn",
+    "unionai",
+    "zededa"
+   ],
+   "kebab-case": [
+    "akamai",
+    "azure-container-apps",
+    "azure-container-instances",
+    "cloudflare",
+    "datastax",
+    "expanso",
+    "golem-cloud",
+    "macrometa",
+    "microsoft-azure-web-pubsub",
+    "netlify"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "akamai",
+    "amazon-appsync",
+    "amazon-aurora-dsql",
+    "amazon-iot-greengrass",
+    "appwrite",
+    "archil",
+    "armada",
+    "azure-container-instances",
+    "azure-function-apps",
+    "beam-cloud",
+    "centml",
+    "chroma",
+    "cloudflare",
+    "codehooks",
+    "cribl",
+    "cumulocity",
+    "datacrunch",
+    "datastax",
+    "deepinfra",
+    "deno",
+    "ditto-live",
+    "edgegap",
+    "esper",
+    "expanso",
+    "fermyon",
+    "firecracker",
+    "fly-io",
+    "freestyle-sh",
+    "gameye",
+    "gcp",
+    "golem-cloud",
+    "google-cloud-api-gateway",
+    "google-cloud-eventarc",
+    "google-cloud-functions",
+    "google-cloud-platform-gcp",
+    "google-cloud-run",
+    "google-cloud-workflows",
+    "google-distributed-cloud",
+    "ibm",
+    "inngest",
+    "insforge",
+    "knative",
+    "koyeb",
+    "kvdb",
+    "langbase",
+    "localai",
+    "localstack",
+    "macrometa",
+    "micronaut",
+    "microsoft-azure-functions",
+    "microsoft-azure-web-pubsub",
+    "modal-com",
+    "modal-labs",
+    "netlify",
+    "nscale",
+    "oracle-cloud",
+    "passivelogic",
+    "planetscale",
+    "prisma",
+    "qstash",
+    "quantcdn",
+    "rightnow",
+    "rivet",
+    "scalable-platforms",
+    "scalable-services",
+    "scale-computing",
+    "scaleway",
+    "spectro-cloud",
+    "supabase",
+    "synadia-communications",
+    "thenile",
+    "tttech",
+    "turbopuffer",
+    "turso",
+    "unionai",
+    "upstash",
+    "val-town",
+    "vast-ai",
+    "webscale-networks",
+    "zededa"
+   ],
+   "camelCase": [
+    "akamai",
+    "amazon-appsync",
+    "amazon-aurora-dsql",
+    "amazon-eventbridge-pipes",
+    "amazon-iot-greengrass",
+    "appwrite",
+    "archil",
+    "armada",
+    "att",
+    "aws-api-gateway",
+    "azure-container-apps",
+    "azure-container-instances",
+    "azure-function-apps",
+    "blaxel",
+    "cerebrium",
+    "cloudflare",
+    "convex",
+    "cribl",
+    "cumulocity",
+    "datacrunch",
+    "datastax",
+    "deno",
+    "esper",
+    "f5-networks",
+    "fermyon",
+    "freestyle-sh",
+    "fusebit",
+    "google-bigquery",
+    "google-cloud-app-engine",
+    "google-cloud-functions",
+    "google-cloud-run",
+    "google-distributed-cloud",
+    "inngest",
+    "insforge",
+    "langbase",
+    "localai",
+    "macrometa",
+    "microsoft-azure-functions",
+    "microsoft-azure-web-pubsub",
+    "netlify",
+    "ninetailed",
+    "oracle-cloud",
+    "passivelogic",
+    "prisma",
+    "qstash",
+    "quantcdn",
+    "rivet",
+    "runpod",
+    "scalable-platforms",
+    "scale-computing",
+    "spectro-cloud",
+    "supabase",
+    "synadia-communications",
+    "thenile",
+    "tttech",
+    "turso",
+    "upstash",
+    "vercel",
+    "xata",
+    "zededa"
+   ],
+   "snake_case": [
+    "amazon-api-gateway",
+    "appwrite",
+    "armada",
+    "aws-api-gateway",
+    "azion",
+    "beam-cloud",
+    "centml",
+    "chroma",
+    "chutes",
+    "cloudflare",
+    "convex",
+    "datacrunch",
+    "ditto-live",
+    "edgegap",
+    "esper",
+    "fal-ai",
+    "firecracker",
+    "fly-io",
+    "freestyle-sh",
+    "golem-cloud",
+    "ibm",
+    "koyeb",
+    "kvdb",
+    "localstack",
+    "macrometa",
+    "modal-com",
+    "neon",
+    "netlify",
+    "planetscale",
+    "quantcdn",
+    "qubrid-ai",
+    "rivet",
+    "scaleway",
+    "segmind",
+    "supabase",
+    "tttech",
+    "val-town",
+    "vast-ai",
+    "webscale-networks",
+    "weidmueller",
+    "xano"
+   ],
+   "PascalCase": [
+    "amazon-efs",
+    "amazon-eventbridge-pipes",
+    "amazon-eventbridge-scheduler",
+    "amazon-lambda",
+    "amazon-outposts",
+    "aws-lambda",
+    "cloudfront"
+   ],
+   "kebab-case": [
+    "akamai",
+    "cloudflare",
+    "ibm",
+    "localai",
+    "macrometa",
+    "webscale-networks"
+   ],
+   "other": [
+    "cloudflare",
+    "freestyle-sh",
+    "zededa"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "akamai",
+    "amazon-api-gateway",
+    "amazon-eventbridge-pipes",
+    "appwrite",
+    "archil",
+    "aws-api-gateway",
+    "blaxel",
+    "chroma",
+    "chutes",
+    "cloudflare",
+    "codehooks",
+    "convex",
+    "cribl",
+    "datacrunch",
+    "datastax",
+    "deno",
+    "edgegap",
+    "esper",
+    "expanso",
+    "fly-io",
+    "freestyle-sh",
+    "ibm",
+    "inngest",
+    "insforge",
+    "knative",
+    "koyeb",
+    "kvdb",
+    "langbase",
+    "localai",
+    "macrometa",
+    "neon",
+    "oracle-cloud",
+    "prisma",
+    "quantcdn",
+    "qubrid-ai",
+    "rivet",
+    "scale-computing",
+    "spectro-cloud",
+    "supabase",
+    "synadia-communications",
+    "thenile",
+    "tttech",
+    "unionai",
+    "val-town",
+    "webscale-networks",
+    "weidmueller",
+    "xata"
+   ],
+   "offset": [
+    "akamai",
+    "appwrite",
+    "blaxel",
+    "chroma",
+    "cloudflare",
+    "codehooks",
+    "cribl",
+    "esper",
+    "freestyle-sh",
+    "insforge",
+    "koyeb",
+    "langbase",
+    "localai",
+    "macrometa",
+    "oracle-cloud",
+    "prisma",
+    "quantcdn",
+    "qubrid-ai",
+    "scale-computing",
+    "spectro-cloud",
+    "supabase",
+    "val-town"
+   ],
+   "max_results": [
+    "amazon-app-runner",
+    "amazon-appsync",
+    "amazon-aurora-dsql",
+    "amazon-eventbridge-scheduler",
+    "amazon-glue",
+    "amazon-iot-greengrass",
+    "amazon-outposts",
+    "amazon-proton",
+    "amazon-snow-family",
+    "amazon-step-functions",
+    "aws-app-runner",
+    "aws-glue",
+    "aws-step-functions",
+    "cloudflare",
+    "freestyle-sh",
+    "gcp",
+    "google-bigquery",
+    "google-cloud-platform-gcp"
+   ],
+   "cursor": [
+    "archil",
+    "blaxel",
+    "cloudflare",
+    "convex",
+    "datacrunch",
+    "deno",
+    "esper",
+    "fly-io",
+    "golem-cloud",
+    "inngest",
+    "neon",
+    "prisma",
+    "qstash",
+    "quantcdn",
+    "turbopuffer",
+    "val-town",
+    "weidmueller",
+    "xata"
+   ],
+   "page": [
+    "akamai",
+    "azion",
+    "chutes",
+    "cloudflare",
+    "datacrunch",
+    "deno",
+    "edgegap",
+    "gameye",
+    "netlify",
+    "oracle-cloud",
+    "planetscale",
+    "scaleway",
+    "supabase",
+    "tttech",
+    "turso",
+    "xano"
+   ],
+   "page_size": [
+    "akamai",
+    "azion",
+    "cloudflare",
+    "cumulocity",
+    "datacrunch",
+    "fermyon",
+    "freestyle-sh",
+    "gameye",
+    "google-cloud-functions",
+    "google-cloud-run",
+    "google-distributed-cloud",
+    "scaleway",
+    "turbopuffer",
+    "turso"
+   ],
+   "start": [
+    "akamai",
+    "cloudflare",
+    "datacrunch",
+    "deno",
+    "freestyle-sh",
+    "ibm",
+    "koyeb",
+    "macrometa",
+    "oracle-cloud",
+    "thenile",
+    "val-town",
+    "webscale-networks"
+   ],
+   "page_token": [
+    "cloudflare",
+    "freestyle-sh",
+    "gcp",
+    "google-bigquery",
+    "google-cloud-functions",
+    "google-cloud-platform-gcp",
+    "google-cloud-run",
+    "google-distributed-cloud"
+   ],
+   "count": [
+    "cloudflare",
+    "datastax",
+    "fusebit",
+    "golem-cloud",
+    "macrometa",
+    "prisma",
+    "qstash"
+   ],
+   "per_page": [
+    "cloudflare",
+    "netlify",
+    "planetscale",
+    "scaleway",
+    "supabase",
+    "xano"
+   ],
+   "size": [
+    "appwrite",
+    "cloudflare",
+    "netlify",
+    "zededa"
+   ],
+   "skip": [
+    "f5-networks",
+    "macrometa",
+    "prisma"
+   ],
+   "before": [
+    "cloudflare",
+    "insforge"
+   ],
+   "starting_after": [
+    "datastax",
+    "localai"
+   ],
+   "top": [
+    "f5-networks",
+    "microsoft-azure-functions"
+   ],
+   "after": [
+    "cloudflare"
+   ],
+   "next": [
+    "fusebit"
+   ]
+  },
+  "property": {
+   "lower": [
+    "akamai",
+    "amazon-api-gateway",
+    "amazon-appsync",
+    "amazon-iot-greengrass",
+    "appwrite",
+    "aws-api-gateway",
+    "azion",
+    "blaxel",
+    "centml",
+    "chroma",
+    "cloudflare",
+    "convex",
+    "cribl",
+    "datacrunch",
+    "deno",
+    "edgegap",
+    "freestyle-sh",
+    "fusebit",
+    "golem-cloud",
+    "google-cloud-functions",
+    "inngest",
+    "insforge",
+    "koyeb",
+    "macrometa",
+    "microsoft-azure-functions",
+    "modal-com",
+    "netlify",
+    "oracle-cloud",
+    "prisma",
+    "quantcdn",
+    "scalable-platforms",
+    "spectro-cloud",
+    "supabase",
+    "zededa"
+   ],
+   "camelCase": [
+    "amazon-api-gateway",
+    "amazon-appsync",
+    "amazon-iot-greengrass",
+    "appwrite",
+    "aws-api-gateway",
+    "blaxel",
+    "convex",
+    "cribl",
+    "deno",
+    "freestyle-sh",
+    "fusebit",
+    "golem-cloud",
+    "google-cloud-functions",
+    "inngest",
+    "insforge",
+    "macrometa",
+    "oracle-cloud",
+    "prisma",
+    "zededa"
+   ],
+   "snake_case": [
+    "azion",
+    "centml",
+    "chroma",
+    "cloudflare",
+    "datacrunch",
+    "edgegap",
+    "insforge",
+    "koyeb",
+    "modal-com",
+    "netlify",
+    "quantcdn",
+    "supabase"
+   ],
+   "PascalCase": [
+    "aws-api-gateway",
+    "aws-lambda"
+   ],
+   "other": [
+    "appwrite"
+   ]
+  }
+ }
+}

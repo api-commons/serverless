@@ -1,0 +1,15 @@
+provider: amazon-lambda
+apis_io: https://apis.io/providers/amazon-lambda/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/amazon-lambda-openapi.yml#DELETE /functions/{FunctionName}
+    - openapi/_original/amazon-lambda-openapi.yml#GET /functions
+    - openapi/_original/amazon-lambda-openapi.yml#GET /functions/{FunctionName}
+    - openapi/_original/amazon-lambda-openapi.yml#POST /functions

@@ -1,0 +1,34 @@
+provider: aws-lambda
+apis_io: https://apis.io/providers/aws-lambda/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    properties:
+      name: FunctionName
+      status: State
+      description: Description
+      version: Version
+      runtime: Runtime
+      code: Code
+      environment: Environment
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/amazon-lambda-functions-api-openapi.yml#DELETE /functions/{FunctionName}
+    - openapi/_original/amazon-lambda-functions-api-openapi.yml#GET /functions
+    - openapi/_original/amazon-lambda-functions-api-openapi.yml#GET /functions/{FunctionName}
+    - openapi/_original/amazon-lambda-functions-api-openapi.yml#POST /functions
+    - openapi/_original/aws-lambda-api-openapi.yml#DELETE /2015-03-31/functions/{FunctionName}
+  function_deployment:
+    path_segment:
+    - versions
+    properties:
+      name: FunctionName
+      status: State
+      version: Version
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/aws-lambda-api-openapi.yml#GET /2015-03-31/functions/{FunctionName}/versions
+    - openapi/_original/aws-lambda-api-openapi.yml#POST /2015-03-31/functions/{FunctionName}/versions

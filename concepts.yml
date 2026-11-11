@@ -1,0 +1,43 @@
+context: serverless
+name: Serverless Functions
+intro: >-
+  The common serverless vocabulary -- functions, their deployments or versions, and their invocations
+  -- distilled from the edge and function-platform APIs that already exist.
+tags: [Serverless, Functions as a Service, Edge Computing, Edge Functions, Cloud Functions, Workers]
+
+envelope: [_links, _pagination, _results, data, success, errors, count, total, page, meta, links, result, results,
+           value, next, previous, has_more, message, page_info, cursor, total_count, per_page, total_pages, object]
+
+common_fields:
+  id: [uuid, guid, external_id, function_id, deployment_id, script_id]
+  created_at: [created, created_date, create_time, created_on]
+  updated_at: [updated, modified_at, update_time, modified_on]
+  status: [state]
+  name: [title, display_name, function_name, slug]
+
+concepts:
+  function:
+    segments: [functions, function, scripts@workers, workers, lambdas, edge_functions, actions@functions|serverless]
+    aliases:
+      runtime: [language, engine, runtime_version]
+      memory: [memory_mb, memory_size, memory_limit]
+      timeout: [timeout_seconds, max_duration]
+      entrypoint: [handler, entry_point, main_module]
+      environment: [env, env_vars, environment_variables, bindings]
+  function_deployment:
+    path: /function-deployments
+    requires: [function]
+    segments: [deployments, deployment, versions@functions|function|scripts|workers, builds@functions|function]
+  # invocation was measured and dropped: 5 readable providers agree only on status.
+
+findings:
+  - >-
+    Functions agree on name, id and status; runtime, memory and timeout each fall below 30%, because
+    edge platforms fix the runtime and size that cloud function platforms make configurable.
+  - >-
+    Function deployments (versions, builds) agree on created_at, id, name, status, updated_at and
+    version at the 6 readable providers that expose them.
+decisions:
+  - >-
+    Workers, scripts, edge functions and lambdas are all function. Invocations were dropped: an
+    invocation is the function's own HTTP call, not a platform resource.

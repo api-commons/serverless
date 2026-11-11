@@ -1,0 +1,194 @@
+openapi: 3.1.0
+info:
+  title: Serverless Functions (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Serverless Functions interface, distilled from the harvested OpenAPI of 136 providers
+    in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /functions:
+    get:
+      operationId: listFunctions
+      summary: List functions
+      tags:
+      - Functions
+      x-commons-tier: core
+      x-commons-share: 0.955
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Function'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createFunction
+      summary: Create a function
+      tags:
+      - Functions
+      x-commons-tier: core
+      x-commons-share: 0.636
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /functions/{function_id}:
+    parameters:
+    - $ref: '#/components/parameters/function_id'
+    get:
+      operationId: getFunction
+      summary: Get a function
+      tags:
+      - Functions
+      x-commons-tier: core
+      x-commons-share: 0.955
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteFunction
+      summary: Delete a function
+      tags:
+      - Functions
+      x-commons-tier: core
+      x-commons-share: 0.773
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateFunction
+      summary: Update a function
+      tags:
+      - Functions
+      x-commons-tier: core
+      x-commons-share: 0.591
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /function-deployments:
+    get:
+      operationId: listFunctionDeployments
+      summary: List function deployments
+      tags:
+      - Function Deployments
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/FunctionDeployment'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createFunctionDeployment
+      summary: Create a function deployment
+      tags:
+      - Function Deployments
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /function-deployments/{function_deployment_id}:
+    parameters:
+    - $ref: '#/components/parameters/function_deployment_id'
+    get:
+      operationId: getFunctionDeployment
+      summary: Get a function deployment
+      tags:
+      - Function Deployments
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    delete:
+      operationId: deleteFunctionDeployment
+      summary: Delete a function deployment
+      tags:
+      - Function Deployments
+      x-commons-tier: core
+      x-commons-share: 0.571
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+components:
+  schemas:
+    Function:
+      $ref: ./schema/function.json
+    FunctionDeployment:
+      $ref: ./schema/function_deployment.json
+  parameters:
+    function_id:
+      name: function_id
+      in: path
+      required: true
+      schema:
+        type: string
+    function_deployment_id:
+      name: function_deployment_id
+      in: path
+      required: true
+      schema:
+        type: string

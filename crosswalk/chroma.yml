@@ -1,0 +1,16 @@
+provider: chroma
+apis_io: https://apis.io/providers/chroma/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    properties:
+      name:
+      - function_name
+      - name
+      id: id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/chroma-openapi.json#GET /api/v2/tenants/{tenant}/databases/{database}/collections/{collection_id}/functions/{function_name}

@@ -1,0 +1,41 @@
+provider: cloudflare
+apis_io: https://apis.io/providers/cloudflare/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - scripts
+    - workers
+    properties:
+      name: name
+      id: id
+      created_at: created_on
+      updated_at: modified_on
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/workers/scripts/{script_name}
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/workers/scripts
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/workers/scripts/{script_name}
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#PUT /accounts/{account_id}/workers/scripts/{script_name}
+    - openapi/_original/cloudflare-openapi-original.yml#DELETE /accounts/{account_id}/workers/scripts/{script_name}
+  function_deployment:
+    path_segment:
+    - deployments
+    - versions
+    properties:
+      created_at:
+      - created_on
+      - created_at
+      id:
+      - id
+      - deployment_id
+      name: name
+      updated_at: modified_on
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/pages/projects/{project_name}/deployments/{deployment_id}
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/pages/projects/{project_name}/deployments
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/pages/projects/{project_name}/deployments/{deployment_id}
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#POST /accounts/{account_id}/pages/projects/{project_name}/deployments
+    - openapi/_original/cloudflare-openapi-original.yml#DELETE /accounts/{account_id}/pages/projects/{project_name}/deployments/{deployment_id}

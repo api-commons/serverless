@@ -1,0 +1,48 @@
+aid: common-serverless
+name: Serverless Functions
+type: Common
+description: 'The common Serverless Functions vocabulary, distilled from the harvested OpenAPI of 136 providers
+  in APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common
+  names to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Serverless
+- Functions as a Service
+- Edge Computing
+- Edge Functions
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/serverless/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-serverless:serverless
+  name: Common Serverless Functions Interface
+  description: The Serverless Functions interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/serverless
+  tags:
+  - Serverless
+  - Functions as a Service
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/serverless/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/serverless/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/serverless/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: function
+    url: https://raw.githubusercontent.com/api-commons/serverless/main/schema/function.json
+  - type: JSONSchema
+    name: function_deployment
+    url: https://raw.githubusercontent.com/api-commons/serverless/main/schema/function_deployment.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/serverless/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

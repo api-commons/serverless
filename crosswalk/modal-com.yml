@@ -1,0 +1,15 @@
+provider: modal-com
+apis_io: https://apis.io/providers/modal-com/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    properties:
+      name: name
+      id: function_id
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/modal-functions-openapi.yml#GET /apps/{app_id}/functions
+    - openapi/_original/modal-functions-openapi.yml#GET /functions/{function_id}

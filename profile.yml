@@ -1,0 +1,327 @@
+context: serverless
+name: Serverless Functions
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Serverless
+  - Functions as a Service
+  - Edge Computing
+  - Edge Functions
+  - Cloud Functions
+  - Workers
+  providers_with_harvested_openapi: 136
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  function:
+    segments_seen:
+      functions: 17
+      function: 5
+      workers: 3
+      scripts: 1
+      edge_functions: 1
+    providers_exposing: 22
+    providers_with_readable_schema: 20
+    operations:
+    - operation: GET collection
+      providers: 21
+      share: 0.955
+      tier: core
+    - operation: GET item
+      providers: 21
+      share: 0.955
+      tier: core
+    - operation: DELETE item
+      providers: 17
+      share: 0.773
+      tier: core
+    - operation: POST collection
+      providers: 14
+      share: 0.636
+      tier: core
+    - operation: UPDATE item
+      providers: 13
+      share: 0.591
+      tier: core
+    - operation: POST item
+      providers: 1
+      share: 0.045
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 17
+      share: 0.85
+      type: string
+      spellings:
+      - name
+      - slug
+      - FunctionName
+      - function_name
+      - displayName
+    - name: id
+      tier: core
+      providers: 15
+      share: 0.75
+      type: string
+      spellings:
+      - id
+      - functionId
+      - $id
+      - deploymentId
+      - function_id
+      - uuid
+    - name: status
+      tier: core
+      providers: 10
+      share: 0.5
+      type: string
+      spellings:
+      - status
+      - state
+      - State
+    - name: created_at
+      tier: extended
+      providers: 7
+      share: 0.35
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - $createdAt
+      - created_on
+    - name: description
+      tier: extended
+      providers: 6
+      share: 0.3
+      type: string
+      spellings:
+      - description
+      - Description
+    - name: version
+      tier: extended
+      providers: 6
+      share: 0.3
+      type: string
+      spellings:
+      - version
+      - Version
+    - name: runtime
+      tier: extended
+      providers: 5
+      share: 0.25
+      type: object
+      spellings:
+      - runtime
+      - Runtime
+    - name: updated_at
+      tier: extended
+      providers: 5
+      share: 0.25
+      type: string
+      spellings:
+      - updated_at
+      - $updatedAt
+      - modified_on
+      - updateTime
+    - name: code
+      tier: extended
+      providers: 4
+      share: 0.2
+      type: string
+      spellings:
+      - code
+      - Code
+    - name: environment
+      tier: extended
+      providers: 4
+      share: 0.2
+      type: object
+      spellings:
+      - environment
+      - Environment
+      - env
+    - name: type
+      tier: extended
+      providers: 4
+      share: 0.2
+      type: string
+      spellings:
+      - type
+    long_tail_count: 224
+    long_tail_sample:
+    - configuration
+    - entrypoint
+    - last_modified
+    - timeout
+    - url
+    - args
+    - branch
+    - domain
+    - error
+    - function_arn
+    - image
+    - ip
+    - memory
+    - metadata
+    - schedule
+    - tags
+    - action
+    - action_config
+    - activation_status
+    - active
+    - app
+    - app_id
+    - application_id
+    - architectures
+    - asn
+    - asn_is
+    - asn_is_not
+    - azion_form
+    - body
+    - boundary_id
+    - build_config
+    - build_id
+    - build_specification
+    - cache_options
+    - canary_revision
+    - category
+    - code_sha256
+    - code_size
+    - commands
+    - compartment_id
+  function_deployment:
+    segments_seen:
+      deployments: 5
+      versions: 3
+      deployment: 1
+    providers_exposing: 7
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET collection
+      providers: 7
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 5
+      share: 0.714
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.714
+      tier: core
+    - operation: DELETE item
+      providers: 4
+      share: 0.571
+      tier: core
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.143
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.143
+      tier: long-tail
+    properties:
+    - name: created_at
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - createdAt
+      - $createdAt
+      - created_on
+      - created_at
+    - name: id
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - id
+      - $id
+      - deploymentId
+      - deployment_id
+    - name: name
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - name
+      - FunctionName
+    - name: status
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - status
+      - State
+    - name: updated_at
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - $updatedAt
+      - modified_on
+      - updatedAt
+    - name: version
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - version
+      - Version
+    long_tail_count: 141
+    long_tail_sample:
+    - environment
+    - metadata
+    - runtime
+    - timeout
+    - type
+    - url
+    - activate
+    - adapter
+    - aliases
+    - annotations
+    - api_definition_id
+    - api_definitions
+    - architectures
+    - assets
+    - author_email
+    - author_id
+    - bindings
+    - build_command
+    - build_config
+    - build_duration
+    - build_id
+    - build_logs
+    - build_runtime
+    - build_size
+    - build_specification
+    - cache_options
+    - code_sha256
+    - code_size
+    - commands
+    - compatibility_date
+    - compatibility_flags
+    - containers
+    - content_base64
+    - content_type
+    - dead_letter_config
+    - deployment_created_at
+    - deployment_retention
+    - deployment_screenshot_dark
+    - deployment_screenshot_light
+    - deployment_trigger

@@ -1,0 +1,18 @@
+provider: blaxel
+apis_io: https://apis.io/providers/blaxel/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    properties:
+      status: status
+      type: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/blaxel-openapi.yml#DELETE /functions/{functionName}
+    - openapi/_original/blaxel-openapi.yml#GET /functions
+    - openapi/_original/blaxel-openapi.yml#GET /functions/{functionName}
+    - openapi/_original/blaxel-openapi.yml#POST /functions
+    - openapi/_original/blaxel-openapi.yml#PUT /functions/{functionName}

@@ -1,0 +1,21 @@
+provider: google-cloud-functions
+apis_io: https://apis.io/providers/google-cloud-functions/
+context: serverless
+generated: '2026-11-11'
+concepts:
+  function:
+    path_segment:
+    - functions
+    properties:
+      name: name
+      status: state
+      description: description
+      updated_at: updateTime
+      environment: environment
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/google-cloud-functions-openapi.yml#DELETE /projects/{projectId}/locations/{location}/functions/{functionId}
+    - openapi/_original/google-cloud-functions-openapi.yml#GET /projects/{projectId}/locations/{location}/functions
+    - openapi/_original/google-cloud-functions-openapi.yml#GET /projects/{projectId}/locations/{location}/functions/{functionId}
+    - openapi/_original/google-cloud-functions-openapi.yml#PATCH /projects/{projectId}/locations/{location}/functions/{functionId}
+    - openapi/_original/google-cloud-functions-openapi.yml#POST /projects/{projectId}/locations/{location}/functions
